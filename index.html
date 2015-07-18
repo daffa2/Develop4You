@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Develop4You</title>
+    <script src="scripts/3rdParty/jquery-2.1.4.min.js" type="application/javascript"></script>
+
+    <script src="scripts/3rdParty/angular.min.js" type="application/javascript"></script>
+    <script src="scripts/3rdParty/angular-route.js" type="application/javascript"></script>
+
+    <!--modules-->
+    <script src="scripts/moduls/appModule.js" type="application/javascript"></script>
+
+    <!--controllers-->
+    <script src="scripts/controllers/mainCntrl.js" type="application/javascript"></script>
+    <script src="scripts/controllers/aboutCntrl.js" type="application/javascript"></script>
+
+    <script src="scripts/moduls/appConfig.js" type="application/javascript"></script>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="scripts/3rdParty/bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="scripts/3rdParty/bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+    <script src="scripts/3rdParty/bootstrap-3.3.5-dist/js/bootstrap.min.js" type="application/javascript"></script>
+</head>
+
+<body ng-app="app" background="images/backround.jpg">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <br>
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href= "#home">Home</a></li>
+
+            <li role="presentation"><a href="#about">About</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+
+<div ng-view></div>
+
+</body>
+</html>
